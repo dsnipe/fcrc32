@@ -1,0 +1,7 @@
+/.source_index
+/Gemfile.lock
+/tmp
+/.bundle
+/Gemfile
+*.bundle
+/test/fixtures/dummy*
