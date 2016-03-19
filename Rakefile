@@ -15,11 +15,6 @@ end
 Rake::Task[:test].prerequisites << :compile <<  "test:dummy"
 task :default => [:test]
 
-# Rake::TestTask.new(:bench) do |t|
-#   t.libs = %w(lib test)
-#   t.pattern = "test/**/*_benchmark.rb"
-# end
-
 desc "Benchmark"
 task :bench => [:compile, "test:dummy"] do
   require "./test/fcrc32_bench"
